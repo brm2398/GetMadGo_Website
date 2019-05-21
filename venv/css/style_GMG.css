@@ -1,0 +1,24 @@
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+  padding-top: 50px;
+}
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+
+#bounce {
+  width: 1200px;
+  height: 1200px;
+  background: url(https://cdn.glitch.com/bac33233-d73a-4673-8a44-a48fd2aee90c%2Fbouncy_spritesheet.png?1551302125214) no-repeat;
+  animation: bounce 1.5s steps(16) infinite;
+  animation-play-state: paused;
+}
+
+@keyframes bounce {
+  to { background-position: -19200px; }
+}
