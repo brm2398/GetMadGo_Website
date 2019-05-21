@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Get Mad Go</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<script src="../venv/js/thevoidGMG.js"></script>
+<link href="/assets/css/blk-design-system.css" rel="stylesheet" />
+
+<style>
+
+body {
+background-color: #525f7f !important
+}
+.mySlides {display: none}
+
+@font-face {
+  font-family: 'dream';
+  src: url('assets/fonts/dream/dream.ttf');
+}
+@font-face {
+  font-family: 'lemon';
+  src: url('assets/fonts/lemon_milk/LemonMilk.otf');
+}
+
+
+.w3-black {background-color: #11ddc4 !important}
+.w3-content {background-color: #525f7f !important}
+h1 {color: #ec6899 !important
+}
+
+h1 {font-family: "lemon"}
+h2 {font-family: "lemon"}
+h3 {font-family: "lemon"}
+
+h2 {color: rgba(255, 255, 255, 0.8) !important
+}
+h3 {color: #ec6899 !important
+}
+
+
+.pgrey{color: rgba(255, 255, 255, 0.8) !important;
+font-family: "dream";
+font-size:18pt;
+width: 80%;
+text-align: center;
+position: relative;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+.pblack{color: #000000 !important;
+font-family: "dream"}
+
+.footerdiv {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+
+.button {
+  background-color: #ec6899; /* pink */
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: dream;
+  
+}
+.buttonX {border-radius: 50px;
+font-family: dream;}
+
+
+.myCity{
+background-image: url('assets\img\City-Purp.png');
+}
+
+
+.PopupPanel
+{
+    border: solid 0px red;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    
+    z-index: 100;
+
+    height: 200px;
+    margin-top: 100px;
+    width: 600px;
+    margin-left: -300px;
+	font-size: 80px;
+	color: #ff0000
+	font-family: dream;
+	
+
+}
+
+.PopupVoid
+{
+    border: solid 0px red;
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    
+    z-index: 100;
+
+    height: 200px;
+    margin-top: 100px;
+    width: 600px;
+    margin-left: -300px;
+	font-size: 80px;
+	color: #ff0000
+	
+	.center-div
+{
+     margin: 0 auto;
+     width: 50%; 
+}
+}
+
+
+</style>
+
+
+<!-- this code is for sumo -->
+<script async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='87abec2cb1941efe2ab4c3fecf320baf257ef703c7395ae2938263defc42605e';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/');</script>
+
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+ 
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu" background-color: #ff0000 !important><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large"><img src=assets\img\pink_transparent.png height="30"></a>
+	<a href="https://www.facebook.com/getmadgo" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-facebook-official w3-hover-opacity" style="font-size: 2em;"></i></a>
+ 	<a href="https://twitter.com/getmadgo" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-twitter w3-hover-opacity" style="font-size: 2em;"></i></a>
+ 	<a href="https://www.instagram.com/getmadgo/" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-instagram w3-hover-opacity" style="font-size: 2em;"></i></a>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="https://www.facebook.com/getmadgo" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i class="fa fa-facebook-official w3-hover-opacity" style="font-size: 2em;"></i></a>
+  <a href="https://twitter.com/getmadgo" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i class="fa fa-twitter w3-hover-opacity" style="font-size: 2em;"></i></a>
+  <a href="https://www.instagram.com/getmadgo/" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()"><i class="fa fa-instagram w3-hover-opacity" style="font-size: 2em;"></i></a>
+  <a href="mailto:squad@getmadgo.co" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+
+</div>
+
+
+<!-- Page content -->
+ <!--<img src="assets\img\City-Purp-.png" style="display:float; margin-left: auto; margin-right: auto;"> -->
+<div class="w3-content" style="max-width:100%;margin-top:46px")></br>
+<div style="text-align:center"> <h1>  GRAB THE MIC </h1>
+<button class="button buttonX" onclick="handleShoutButtonClicked(this);" style="font-family: dream;">CLICK TO MAKE SOME NOISE</button></br>
+<input id="textShout"  value="or type your shout" type="text" style="font-family: dream;" />
+<button id="shoutButton" style="font-family: dream;">SHOUT</button>
+<div id="bounceContainer" class="content-center text-center">
+        <h2> <span id="localTotalShouts">0</span> SHOUTS </br> </h2> <h3>KEEP BRINGING THE NOISE! </h3>
+        <div id="bounce"></div>
+      </div>
+
+<div class="PopupPanel" id="fader" color="red"></div> <!-- text that disappears -->
+
+<div id="container">  <!-- how we make void clickable -->
+<!-- <img src="assets\img\unnamed.gif">-->
+ <!-- <div onclick="location.href='http://www.google.com'"> uncomment to enable redirect from void -->
+<canvas id="myCanvas" width="300" height="300"></canvas> <!-- spiral -->
+</div>
+</div>
+
+<!-- Begin Mailchimp Signup Form -->
+
+<!-- Begin Mailchimp Signup Form -->
+<p style="font-family:dream;" class="pgrey"> GetMadGo is an augmented-reality (AR) game that turns users into community organizers, grassroots advocates, and spontaneous activists through unplanned street theater and off-phone human interaction. Capture politicians, not Pokemon! </p>
+<!-- Begin Sumo Signup Form -->
+<span data-sumome-listbuilder-embed-id="05e58e91a0781d5a0faba9b6a239bfd06dc0f6f70060ad560d6c9ff840575cc0"></span> 
+<!-- End Sumo Signup Form -->
+</br>
+<!-- Begin text Signup Form -->
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> // text fade script
+var bool = 0; //visable
+$(document).ready(function(){
+  $("#shoutButton").click(function(){
+
+  var mytext = document.getElementById("textShout").value
+  document.getElementById("fader").innerHTML=mytext
+  document.getElementById("textShout").value="";
+
+  	$("#fader").text(mytext);
+    $("#fader").fadeIn("fast");
+    $("#fader").text(mytext);
+    $("#fader").fadeOut(2000);
+	var scounter =  document.getElementById('localTotalShouts').textContent
+	scounter++;
+	document.getElementById('localTotalShouts').textContent = scounter;
+
+  });
+});
+
+</script>
+
+</div>
+
+
+<!-- yelling here -->
+
+<script src="venv/js/thevoidGMG.js">
+</script>
+<script>
+var yelling =0; //0 is calm anything else makes it excited
+</script>
+
+
+<script> //draws the void
+
+DrawSpiral(10)
+
+function DrawSpiral(mod) {
+
+   var c = document.getElementById("myCanvas");
+    var scrambleCount = 0;
+	var cxt = c.getContext("2d");
+
+	var centerX = 150;
+    var centerY = 150;
+
+    cxt.save();
+    cxt.clearRect(0, 0, c.width, c.height);
+
+    cxt.beginPath();
+    cxt.moveTo(centerX, centerY);
+
+    var STEPS_PER_ROTATION = 60;
+    var increment = 2 * Math.PI / STEPS_PER_ROTATION;
+    var theta = increment;
+	var sizeS = 40;
+	//alert(window.innerWidth)
+	// big
+	if (window.innerWidth > 1000)
+	{
+	c.width=800
+	c.height=700
+	centerX=400
+	centerY=325
+	sizeS=100
+	}
+	//small
+	if (window.innerWidth < 1000 & window.innerWidth > 500)
+	{
+	c.width=400
+	c.height=400
+	centerX=200
+	centerY=200
+	sizeS=60
+	}
+	//small
+	if (window.innerWidth < 500)
+	{
+	c.width=300
+	c.height=300
+	centerX=150
+	centerY=150
+	sizeS=40
+	}
+
+
+    while (theta < sizeS * Math.PI) {
+	if (yelling == 0) //calm
+		{
+        var newX = centerX + theta * Math.cos(theta - mod) + Math.sin(theta)*20;
+        var newY = centerY + theta * Math.sin(theta - mod) - Math.sin(theta)*10;
+	
+		}
+		else //excited
+		{
+		var newX = centerX + theta * Math.cos(theta - mod) + Math.sin(theta)*20 + Math.random()*20;
+		var newY = centerY + theta * Math.sin(theta - mod) - Math.sin(theta)*20 + Math.random()*20;
+
+		}
+	
+       // ctx.strokeStyle = "#FF0000"; 
+		cxt.lineTo(newX, newY);
+		cxt.lineWidth = 2;
+		if (yelling ==0){
+		//
+		}
+		else{
+		//cxt.strokeStyle = "#550000"; //enable to change color
+		}
+        theta = theta + increment;
+    }
+	cxt.strokeStyle = "#ffffff";
+    cxt.stroke();
+    cxt.restore();
+}
+
+var counter = 0;
+setInterval(function () {
+    DrawSpiral(counter);
+    counter += 0.075;
+}, 10);
+
+</script>
+
+<!-- End Page Content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  
+  <div class="footerdiv">
+
+  <div class=centered>
+  <a href="https://www.facebook.com/getmadgo" class="fa fa-facebook-official w3-hover-opacity"></a>
+  <a href="https://www.instagram.com/getmadgo/" class="fa fa-instagram w3-hover-opacity"></a>
+  <a href="https://twitter.com/getmadgo" class="fa fa-twitter w3-hover-opacity"></a>
+
+  <p class="pblack" color="#FFFFFF" > 
+  Contact US: <a href="mailto:squad@getmadgo.co">squad@getmadgo.co</a> 
+  <a href="https://opensource.org/licenses/MIT">Licenses</a> 
+  <a href="https://www.samjaredbonar.com/">Copyright Filiblaster LLC 2019</a>
+  </p>
+  </div>
+  </div>
+ 
+</footer>
+<!-- w3-medium -->
+<script>
+
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>

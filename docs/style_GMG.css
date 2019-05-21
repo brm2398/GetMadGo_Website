@@ -1,0 +1,35 @@
+body {
+  font-family: gitan-latin, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 2em;
+  background-color: #11ddc4;
+}
+
+@font-face {
+  font-family: "gitan-latin";
+  src: url("https://use.typekit.net/jez7tqw.css")
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "gitan-latin";
+  font-style: italic;
+  color: #373fff;
+}
+
+
+#bounce {
+  width: 1200px;
+  height: 1200px;
+}
+  background: url(https://cdn.glitch.com/bac33233-d73a-4673-8a44-a48fd2aee90c%2Fbouncy_spritesheet.png?1551302125214) no-repeat;
+  animation: bounce 1.5s steps(16) infinite;
+  animation-play-state: paused;
+}
+
+@keyframes bounce {
+  to { background-position: -19200px;
+; }
+}
