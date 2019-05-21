@@ -7,7 +7,7 @@ HTML
 CSS
 
 # Purpose
-To build on an open source framwork 
+To build a website using an open source framwork for the GetMadGo App.
 
 # AWS
 GetMadGo Website was hosted on AWS S3 
